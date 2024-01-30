@@ -1,0 +1,74 @@
+:root{
+    --colorgris:#7a969cde;/*Variables personalizadas*/
+    --textsize: 12px;
+    --colorazul:  #14c6f8d9;
+}
+body {
+    font-family: 'Rubik', sans-serif;/*Fuente importada de Google*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 15px;
+    background-color: #3498db;
+    color: #ffffff;/*Color de texto*/
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+h4{
+    color: #000000;/*color de titutulos h4*/
+}
+
+h3{
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px; 
+    border-radius: 20px;
+    margin: 1;
+    color: #000000;/*color de titutulos h3*/
+}
+
+.imagen{
+    background-color: var(--colorazul); /*color de fondo a elemento div*/
+    display: inline-block; 
+    padding: 1px; 
+    border-radius: 50%;
+    position: absolute; /*Para posicionar pefectamente la imagen*/
+    top: 40px; /*Posicion de la imagen */
+    left: 380px;/*Posicion de la imagen */
+   
+}
+
+.imagen img{
+    border-radius: 50%;/*redondear la imagen*/
+    
+}
+.container {
+    display: flex;/* para alinear a sus hijos*/
+    height: 74vh;/* ocupar el 74 de la pantalla a lo alto*/
+    text-align: center;/* todos los textos alineados al centro*/
+    font-size: var(--textsize);/*Cambiar tamaño de fuente */
+}
+
+#parte1,
+#parte2,
+#parte3,
+#parte4 {
+    flex: 1;/*Herencia de estilos*/
+    background-color: var(--colorgris); /* Color fondo */
+    color: #fff;/*color del texto*/
+    border: 2px solid #ffffff;/*Bordes al rededor de los elementos*/
+}
+
+#parte2,#parte4 {
+    background-color: var(--colorazul); /* Color fondo y herencia de estilos */
+}
+
+ul {
+    list-style-type: none;/*lista sin numeros o puntitos*/
+    padding: 5px;
+}
